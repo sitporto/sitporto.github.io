@@ -1,0 +1,85 @@
+html {
+  scroll-behavior: smooth;
+  text-rendering: auto;
+  overflow-wrap: break-word;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  font-family: var(--font-family-ui);
+  font-size: var(--font-1-size);
+  letter-spacing: var(--font-1-spacing);
+}
+
+body {
+  --row-gap: 4rem;
+
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
+  grid-template-columns:
+    minmax(2rem, 1fr) [start] minmax(0, 617px) [center] minmax(
+    0,
+    617px
+  ) [end] minmax(2rem, 1fr);
+
+  > * {
+    grid-column: 1 / -1;
+  }
+}
+h1, h2, h3 {
+  text-wrap: balance;
+}
+h1, h2, h3, h4, h5, h6, strong {
+  font-weight: var(--font-weight-bold);
+}
+
+hr {
+  width: 100%;
+  display: block;
+  color: var(--color-primary);
+  border: none;
+  border-top: solid var(--border-weight);
+  margin: min(4rem, 5vh) 0;
+}
+
+:focus {
+  z-index: 1;
+}
+
+:focus-visible {
+  outline-width: 1px;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-color: currentColor;
+}
+
+.ly-blocks {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+  row-gap: var(--row-gap);
+  margin-top: calc(150px + 5vh);
+
+  &:has(> .block-hero:first-child) {
+    margin-top: 0;
+  }
+}
+
+code {
+  font-family: var(--font-family-code);
+  font-size: 15px;
+  letter-spacing: 0;
+  background-color: var(--color-bg-code);
+  color: var(--color-text-code);
+  display: inline-block;
+  border-radius: 4px;
+  padding: 0.1em 0.25em;
+}
+
+pre > code {
+  display: block;
+  line-height: 1.4;
+  padding: 0.5em;
+  overflow-x: auto;
+}

@@ -1,0 +1,93 @@
+/* Title title */
+.type-header {
+  font-family: var(--font-family-ui);
+  font-size: var(--font-9-size);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--font-6-spacing);
+  line-height: var(--line-height-title);
+  margin: 0;
+}
+.type-title {
+  font-family: var(--font-family-ui);
+  font-size: var(--font-6-size);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--font-6-spacing);
+  line-height: var(--line-height-title);
+  margin: 0;
+}
+.type-subtitle {
+  font-family: var(--font-family-ui);
+  font-size: var(--font-3-size);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--font-3-spacing);
+  line-height: var(--line-height-title);
+  margin: 0;
+}
+/* Normal text */
+.type-txt {
+  font-family: var(--font-family-ui);
+  font-size: var(--font-2-size);
+  letter-spacing: var(--font-2-spacing);
+  line-height: var(--line-height-text);
+
+  & h2 {
+    font-size: var(--font-3-size);
+    letter-spacing: var(--font-3-spacing);
+    line-height: var(--line-height-medium);
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+  }
+  & h3 {
+    font-size: var(--font-2-size);
+    letter-spacing: var(--font-2-spacing);
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+  }
+
+  & p {
+    margin-bottom: 0;
+  }
+}
+.type-txt-bold {
+  font-family: var(--font-family-ui);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-2-size);
+  letter-spacing: var(--font-2-spacing);
+  line-height: var(--line-height-text);
+}
+
+/* Short texts */
+.type-short-m {
+  font-family: var(--font-family-ui);
+  font-size: var(--font-2-size);
+  letter-spacing: var(--font-2-spacing);
+  line-height: var(--line-height-medium);
+}
+.type-short-m-bold {
+  font-family: var(--font-family-ui);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-2-size);
+  letter-spacing: var(--font-2-spacing);
+  line-height: var(--line-height-medium);
+}
+.type-short {
+  font-family: var(--font-family-ui);
+  font-size: var(--font-1-size);
+  letter-spacing: var(--font-1-spacing);
+  line-height: var(--line-height-medium);
+}
+.type-short-bold {
+  font-family: var(--font-family-ui);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-1-size);
+  letter-spacing: var(--font-1-spacing);
+  line-height: var(--line-height-medium);
+}
+
+/* Caption texts */
+.type-caption {
+  font-family: var(--font-family-ui);
+  font-size: var(--font-0-size);
+  letter-spacing: var(--font-0-spacing);
+  line-height: var(--line-height-medium);
+}
